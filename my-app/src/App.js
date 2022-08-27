@@ -1,4 +1,4 @@
-import imageRickMorty from "./img/png-transparent-rick-morty-illustration-rick-sanchez-morty-smith-rick-and-morty-season-3-television-show-adult-swim-rick-and-morty-television-child-face.png"
+import imageRickMorty from "./img/58f37720a4fa116215a9240f.png"
 import './App.css';
 import {useState} from 'react';
 import Characters from "./components/Characters";
@@ -18,12 +18,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <h1 className="title">Rick & Morty</h1>
        {characters ? (
        <Characters characters={characters} setCharacters={setCharacters}/>
        ) : (
        <>
-        <img src={imageRickMorty} alt="Rick & Morty" className="img-home"/>
+       <img src={imageRickMorty} alt="Rick&Morty" className="img-home"></img>
        <button onClick={reqApi} className="btn-search">Buscar Personajes</button>
        </>
        )}
